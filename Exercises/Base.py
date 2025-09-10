@@ -4,29 +4,45 @@
     All codes here are my beginner codes, so I can keep tracking what I've learned and centralize all my notes.
     I'll keep adding new codes in this file until I feel comfortable to take a next step in my studies.
 """
-#region Variables
+#region GLOBAL VARIABLES
+user_name = "Roger"
+user_age = 25
+user_city = "Varginha-MG, Brazil"
+
 number1 = 8
 number2 = 9
 number3 = 10
 number4 = 11
 
-user_name = "Roger"
-user_age = 25
-user_city = "Varginha"
-
 counter = 0
 #endregion
 
-# Calculate average, then print
-average = (number1 + number2 + number3 + number4) / 4
-print("The average number is: ", average)
-
 # Print user data
-print("Name:", user_name)
-print("Age:", user_age, "years old")
-print("City:", user_city)
+print("------------------ USER ------------------")
+print(f"Name: {user_name}")
+print(f"Age: {user_age} years old")
+print(f"City: {user_city}")
+
+# Calculate average, then print
+print("\n------------ CALCULATE AVERAGE ------------")
+average = (number1 + number2 + number3 + number4) / 4
+print(f"The four numbers are: {number1}, {number2}, {number3}, {number4}.\nAverage number is: {average}.")
+
+# Function to print the counter text
+def print_counter():
+    print(f"Counter: {counter}.")
+    pass
 
 # Loop counter
+print("\n-------------- COUNTER O-4 --------------")
 while counter < 5:
-    print("Counter:", counter)
+    print_counter()
     counter += 1
+
+# Check if counter is on 5
+print("\n--------- AM I A LOCAL VARIABLE? ---------")
+if counter == 5:
+    local_variable = "I'm a local variable"
+    print(f"{local_variable}!\nIf I'm really a local variable, then {local_variable} and the counter is now on five.")
+    print_counter()
+
