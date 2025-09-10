@@ -15,13 +15,15 @@ number3 = 10
 number4 = 11
 
 counter = 0
+
+CONVENTIONAL_CONSTANT = "Please, don't change my value, I'm trying to be a CONSTANT_VARIABLE."
 #endregion
 
 # Print user data
 print("------------------ USER ------------------")
-print(f"Name: {user_name}")
-print(f"Age: {user_age} years old")
-print(f"City: {user_city}")
+print(f"Name: {user_name}.")
+print(f"Age: {user_age} years old.")
+print(f"City: {user_city}.")
 
 # Calculate average, then print
 print("\n------------ CALCULATE AVERAGE ------------")
@@ -46,3 +48,6 @@ if counter == 5:
     print(f"{local_variable}!\nIf I'm really a local variable, then {local_variable} and the counter is now on five.")
     print_counter()
 
+# Constant convention reminder
+print("\n---- SHOULD I CHANGE CONSTANT VALUES? ----")
+print(CONVENTIONAL_CONSTANT)
